@@ -22,11 +22,22 @@
     #nasa{
         font-style: italic;
     }
+    a[href="https://www.nasa.gov"]:hover{
+        color: red;
+    }
+
+    .intro::after{
+        content: ":)";
+    }
+    ::placeholder {
+        color:rgb(0, 0, 0);
+        font-size: 11px;
+    }
     </style>
 </head>
 <body>
     <nav>
-        <ul>
+        <ul class="navMenu">
             <li> Home </li> 
             <li> About us </li>
             <li> Contact us </li>
@@ -40,7 +51,7 @@
     </section>
     <form action=""> 
         <label for="favPlanet"> What is your favourite planet?</label>
-        <input type="text" id="favPlanet">
+        <input type="text" id="favPlanet" placeholder="type sum here:">
     </form> 
     <h2 id="nasa"> Visit <a href="https://www.nasa.gov"> NASA website</a> </h2> 
 </body>
