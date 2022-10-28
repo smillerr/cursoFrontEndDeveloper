@@ -10,13 +10,13 @@
         color:rgb(119, 39, 156);
     }
     
-    div .intro {
+    .intro {
         font-size: 20px;
     }
 
     a[href="https://www.nasa.gov"]{
         color: rgb(36, 133, 36);
-        font-style: normal !important;
+        font-style: normal;
     }
 
     #nasa{
@@ -32,6 +32,12 @@
     ::placeholder {
         color:rgb(0, 0, 0);
         font-size: 11px;
+    }
+    .overrideText {
+        color:blueviolet;
+    }
+    #overrideText { 
+        color:goldenrod;
     }
     </style>
 </head>
@@ -54,5 +60,6 @@
         <input type="text" id="favPlanet" placeholder="type sum here:">
     </form> 
     <h2 id="nasa"> Visit <a href="https://www.nasa.gov"> NASA website</a> </h2> 
+    <div id="overrideText" class="overrideText"> This text it's gonna be overrided by the id "overrideText" </div>  
 </body>
 </html>
