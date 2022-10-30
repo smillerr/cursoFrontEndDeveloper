@@ -58,6 +58,26 @@
     .inlineBlock:hover{
         color: rgb(52, 51, 51);
     }
+    .planetTable{
+        display: flex; 
+        justify-content: space-around;
+        align-items:flex-start;
+        background-color: palegoldenrod;
+        width: 500px;
+        height: 500px;
+    }   
+    .first{
+        align-self: flex-start;
+    }
+    .second{
+        align-self: center;
+    }
+    .third{
+        align-self: flex-end;
+    }
+    .fourth{
+        align-self: flex-start;
+    }
     </style>
 </head>
 <body>
@@ -83,5 +103,12 @@
     <div class="block"> Block type </div> 
     <a class="inline" href="/"> Inline type </a>
     <button class="inlineBlock"> Inline-block </button>
+    <h3> CSS Flex </h3>
+    <section class="planetTable">
+        <div class="first"> First </div> 
+        <div class="second"> Second </div>
+        <div class="third"> Third </div>
+        <div class="fourth"> Fourth </div>
+    </section> 
 </body>
 </html>
