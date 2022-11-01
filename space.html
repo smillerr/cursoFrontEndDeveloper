@@ -65,6 +65,7 @@
         background-color: palegoldenrod;
         width: 500px;
         height: 500px;
+        margin: 20px;
     }   
     .first{
         align-self: flex-start;
@@ -83,7 +84,7 @@
         width: 500px;
         height: 500px;
         background-color: darkkhaki;
-        margin-top: 30px;
+        margin: 20px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }
@@ -104,6 +105,18 @@
         grid-column: 4 / 5;
         grid-row: 4 / 5;
     }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        box-sizing: border-box;
+        padding: 8px;
+        border: 3px black dashed;
+        margin: 20px;
+    }
+   
     </style>
 </head>
 <body>
@@ -142,6 +155,8 @@
         <div class="item"> Item </div>
         <div class="item"> Item </div>
         <div class="item"> Item </div>
-    </div>
+    </div> 
+    <h3> Box design </h3>
+    <div class="box"> Box </div>
 </body>
 </html>
