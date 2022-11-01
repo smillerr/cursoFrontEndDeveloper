@@ -78,6 +78,32 @@
     .fourth{
         align-self: flex-start;
     }
+    #containerGrid{
+        display: grid;
+        width: 500px;
+        height: 500px;
+        background-color: darkkhaki;
+        margin-top: 30px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    #containerGrid .item:nth-child(1){
+        background-color: darkgoldenrod;
+        grid-column: 1 / 2;
+    }
+    #containerGrid .item:nth-child(2){
+        background-color: coral;
+        grid-row: 4 / 5;
+    }
+    #containerGrid .item:nth-child(3){
+        background-color:darkslategray;
+        grid-column: 4 / 5;
+    }
+    #containerGrid .item:nth-child(4){
+        background-color: hotpink;
+        grid-column: 4 / 5;
+        grid-row: 4 / 5;
+    }
     </style>
 </head>
 <body>
@@ -110,5 +136,12 @@
         <div class="third"> Third </div>
         <div class="fourth"> Fourth </div>
     </section> 
+    <h3> CSS Grid </h3>
+    <div id="containerGrid"> 
+        <div class="item"> Item </div>
+        <div class="item"> Item </div>
+        <div class="item"> Item </div>
+        <div class="item"> Item </div>
+    </div>
 </body>
 </html>
