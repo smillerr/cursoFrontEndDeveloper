@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags training</title>
+    <style> 
+    nav {
+        color:rgb(119, 39, 156);
+    }
+    
+    .intro {
+        font-size: 20px;
+    }
+
+    a[href="https://www.nasa.gov"]{
+        color: violet;
+        font-style: normal;
+    }
+
+    #nasa{
+        font-style: italic;
+    }
+    a[href="https://www.nasa.gov"]:hover{
+        color: darkblue;
+    }
+
+    .intro::after{
+        content: ":)";
+    }
+    ::placeholder {
+        color:rgb(0, 0, 0);
+        font-size: 11px;
+    }
+    .overrideText {
+        color:blueviolet;
+    }
+    #overrideText { 
+        color:goldenrod;
+    }
+    .block {
+        background-color: salmon;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+    }
+    .inline {
+        background-color: aqua;
+        margin: 15px;
+    }
+    .inlineBlock {
+        color: gray;
+        background-color: azure;
+        width: 50px;
+        width: 50px;
+    }
+    .inlineBlock:hover{
+        color: rgb(52, 51, 51);
+    }
+    .home {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .aboutUs {
+        display: flex;
+        justify-content: center;
+    }
+    .contactUs {
+        display: flex;
+        justify-content: flex-end;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navMenu">
+            <li class="home"> Home </li> 
+            <li class="aboutUs"> About us </li>
+            <li class="contactUs"> Contact us </li>
+        </ul>
+    </nav> 
+    <section>
+        <div> <img src="https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&w=600" alt="The milky way" > </div>
+        <div>
+            <h2 class="intro"> I love universe and space related stuff </h2>
+        </div>
+    </section>
+    <form action=""> 
+        <label for="favPlanet"> What is your favourite planet?</label>
+        <input type="text" id="favPlanet" placeholder="type sum here:">
+    </form> 
+    <h2 id="nasa"> Visit <a href="https://www.nasa.gov" target="_blank"> NASA website</a> </h2> 
+    <div id="overrideText" class="overrideText"> This text it's gonna be overrided by the id "overrideText" </div>  
+    <div class="block"> Block type </div> 
+    <a class="inline" href="/"> Inline type </a>
+    <button class="inlineBlock"> Inline-block </button>
+</body>
+</html>
